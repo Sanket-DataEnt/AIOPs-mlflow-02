@@ -31,6 +31,11 @@ mlflow run https://github.com/<USERNAME>/<REPO_NAME.git -P param=5.0
 ```bash
 conda env export > conda.yaml
 ```
+### To serve the model
+```bash
+mlflow models serve <path of the model> -p 1234
+ex: mlflow models serve /Users/sanket/Personal/Github/AIOPs-mlflow-02/mlruns/0/0d0245b4885044e6b380e5ebccf4acde/artifacts/model/ -p 1234
+```
 ### command for prediction on serving model 
 #### for windows -
 ```bash
